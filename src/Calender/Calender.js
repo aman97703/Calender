@@ -65,6 +65,7 @@ const Calender = ({ value, onChange }) => {
                 if ((edate.getFullYear() === vdate.getFullYear()) && (edate.getMonth() === vdate.getMonth())) {
                     return edate.getDate();
                 }
+                return null
             })
             const newDate1 = newDate.map((v) => v === undefined ? 0 : v)
             // console.log(newDate1)
